@@ -108,13 +108,30 @@ Novel manikin system achieving adjustable non-linear behavior:
 
 ### 3.2 TU/e Human-Like Thorax Manikin (Thielen et al. 2017)
 
-Anatomically realistic infant manikin design featuring:
-- Human-like thorax structure
-- Embedded flow sensors for ventilation measurement
-- Non-linear force-displacement mimicking human CPR
-- Integrated feedback capability
+Anatomically realistic manikin design featuring:
+- POM (polyoxymethylene) rib cage laser-cut to anatomical dimensions
+- Memory foam lungs coated with silicone
+- Latex cardiovascular system with 75mL balloon ventricles
+- Embedded flow sensors (Honeywell airflow, B.I.O-TECH liquid flow)
 
-**Significance:** Demonstrates feasibility of engineering fidelity in infant manikins with embedded sensing.
+**Characterization Method:**
+- Q-CPR (Philips) force-displacement measurement
+- 3 non-medical professionals, 30-second compression tests
+- Fitted to Gruben polynomial model: F = k₁z + k₂z² + k₃z³ + k₄z⁴ + d₀ż + d₁zż
+
+**Results:**
+| Aspect | Human (Gruben) | Classical Manikin | Thielen Manikin |
+|--------|----------------|-------------------|-----------------|
+| Behavior | Nonlinear | Linear (only k₂) | Nonlinear (k₂, k₃, k₄) |
+| Force at 5cm | Higher | — | "Considerably lower" |
+
+**Critical admission:** "The force required to achieve similar compression depths in humans is considerably higher. This indicates that the stiffness of our manikin is low." — Thielen 2017
+
+**Flow sensor results:**
+- Cardiac output: 1.65 L/min (48% lower than Fodden human data)
+- Air displacement: 2.7 L/min
+
+**Significance:** Demonstrates that anatomical mimicry (form) does not guarantee functional equivalence (function). Thielen validated *shape* of nonlinearity but not *magnitude* of force-displacement.
 
 ### 3.3 Commercial Manikin Survey
 
