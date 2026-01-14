@@ -8,7 +8,7 @@
 
 Special issue of **Measurement Science and Technology** (IOP Publishing) on *"Data-Centric Exploration and Explanation of Physical and Engineering Phenomena"*
 
-**Deadline:** July 31, 2026 (~6 months)
+**Deadline:** March 31, 2026 (~2.5 months)
 
 **Link:** https://iopscience.iop.org/collections/mst-251119-1003
 
@@ -51,10 +51,10 @@ Special issue of **Measurement Science and Technology** (IOP Publishing) on *"Da
 
 | Period | Activity |
 |--------|----------|
-| Jan-Feb | Data collection |
-| Mar-Apr | Analysis + modeling |
-| May-Jun | Writing + revision |
-| Jul | Submit |
+| Jan | Data collection |
+| Feb | Analysis + modeling |
+| Early Mar | Writing + co-author feedback |
+| Mid-Late Mar | Revision + submit |
 
 ---
 
@@ -73,7 +73,7 @@ The perspective paper argues *for* engineering fidelity; the MST paper provides 
 
 ## Decision Needed
 
-1. Is the 6-month timeline feasible given current commitments?
+1. Is the 2.5-month timeline feasible given current commitments?
 2. Is ventilation testing equipment available/acquirable?
 3. Priority relative to other ongoing work?
 
@@ -83,4 +83,4 @@ The perspective paper argues *for* engineering fidelity; the MST paper provides 
 
 This is a strong opportunity if resources permit. The ventilation fidelity angle is unique and directly addresses the major gap identified in our perspective paper. The special issue framing (data-centric, physics-informed) aligns well with our measurement science approach.
 
-Risk: tight timeline. Mitigation: leverage existing TIM methodology and available manikins.
+Risk: very tight timeline (2.5 months). Mitigation: leverage existing TIM methodology, available manikins, and focus scope if needed.

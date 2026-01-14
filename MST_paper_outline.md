@@ -2,7 +2,7 @@
 
 **Target:** Measurement Science and Technology - Special Issue on "Data-Centric Exploration and Explanation of Physical and Engineering Phenomena"
 
-**Deadline:** July 31, 2026
+**Deadline:** March 31, 2026
 
 **Call for papers:** https://iopscience.iop.org/collections/mst-251119-1003
 
@@ -148,11 +148,10 @@ Propose a quantified metric for manikin selection:
 
 | Period | Activity |
 |--------|----------|
-| Jan-Feb 2026 | Data collection: compression + ventilation characterization |
-| Mar-Apr 2026 | Analysis: reference model fitting, manikin comparison |
-| May 2026 | Writing: first draft |
-| Jun 2026 | Revision: co-author feedback, refinement |
-| Jul 2026 | Submit by July 31 deadline |
+| Jan 2026 | Data collection: compression + ventilation characterization |
+| Feb 2026 | Analysis: reference model fitting, manikin comparison |
+| Early Mar 2026 | Writing: first draft + co-author feedback |
+| Mid-Late Mar 2026 | Revision + submit by March 31 deadline |
 
 ---
 

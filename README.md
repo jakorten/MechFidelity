@@ -1,8 +1,12 @@
 # Engineering Fidelity of CPR Training Manikins
 
-A research paper for **Measurement Science and Technology** (IOP Publishing) - Special Issue on *"Data-Centric Exploration and Explanation of Physical and Engineering Phenomena"*
+A research paper for **Measurement Science and Technology** (IOP Publishing) - Focus Collection on *"Data-Centric Exploration and Explanation of Physical and Engineering Phenomena"*
 
-**Deadline:** July 31, 2026
+**Deadline:** March 31, 2026
+
+**Invitation:** Personal recommendation by Guest Editor Rui Yuan (Wuhan University of Science and Technology)
+
+**Collection page:** https://iopscience.iop.org/collections/mst-251119-1003
 
 ## Overview
 

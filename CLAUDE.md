@@ -8,7 +8,7 @@ This repository contains the **Engineering Fidelity Paper** - a technical measur
 
 **Target:** Measurement Science and Technology - Special Issue on "Data-Centric Exploration and Explanation of Physical and Engineering Phenomena"
 
-**Deadline:** July 31, 2026
+**Deadline:** March 31, 2026
 
 ## Core Concept
 
