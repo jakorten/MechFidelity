@@ -455,13 +455,113 @@ where $w_c$ and $w_v$ are weighting factors reflecting the relative importance o
 
 ## 7. Discussion
 
-*[To be drafted after results are available.]*
+### 7.1 Principal Findings
+
+This work presents the first systematic framework for quantifying the engineering fidelity of CPR training manikins against human biomechanical reference data. Three principal findings emerge:
+
+**First, comprehensive human reference data exists but has not been applied to manikin validation.** The Ruiz de Gauna dataset (n=615 OHCA patients, 1.15M compressions) provides statistically robust chest compression mechanics parameters [5], while the Huang dataset (n=205 infants) provides infant ventilation mechanics [11]. These datasets enable construction of evidence-based reference envelopes rather than relying on expert opinion or anatomical assumptions.
+
+**Second, anatomical fidelity does not guarantee functional fidelity.** The Thielen et al. [3] design achieved correct *shape* of nonlinear force-displacement behavior through anatomical mimicry, but incorrect *magnitude*—their manikin was "considerably lower" in stiffness than human reference values. This exemplifies the form-function distinction: high anatomical fidelity (form) is neither necessary nor sufficient for high engineering fidelity (function).
+
+**Third, system-level validation is essential.** Our prior work demonstrated 5.6% calibration shifts between isolated and integrated sensor configurations [6], with 120–130× deviations from component datasheet predictions. This confirms that manikin mechanical properties must be characterized *in phantoma*, not inferred from component specifications.
+
+### 7.2 Implications for Manikin Design
+
+The engineering fidelity framework has direct implications for manikin design philosophy:
+
+**Target functional equivalence, not structural mimicry.** A simplified mechanism (e.g., tuned spring-damper system) that produces correct force-displacement behavior is functionally equivalent to anatomical complexity for skill transfer purposes. The trainee's muscles respond to mechanical feedback, not internal anatomy.
+
+**Validate at system level.** Component-level specifications are insufficient. Mechanical properties emerge from the integrated system and must be measured accordingly.
+
+**Account for compression/recoil asymmetry.** Human chest damping during recoil is 1.7× higher than during compression [5]. Current manikins with symmetric spring-damper behavior cannot replicate this physiologically important characteristic.
+
+**Consider time-varying properties.** Human chest stiffness decreases ~35% during sustained CPR [5]. Static manikin characterization may miss clinically relevant dynamics.
+
+### 7.3 Implications for Training
+
+If manikins deviate substantially from human mechanical properties, what are the consequences for skill transfer?
+
+**Force calibration:** Trainees who learn on overly soft manikins may apply insufficient force during real CPR; those trained on overly stiff manikins may apply excessive force, risking injury.
+
+**Rate adaptation:** The natural compression rate that "feels right" depends on the mechanical feedback. Incorrect stiffness may lead to rate deviations in clinical practice.
+
+**Ventilation technique:** Airway resistance and compliance affect the "feel" of bag-mask ventilation. Manikins with unrealistic ventilation mechanics may poorly prepare trainees for real infant airways.
+
+The Engineering Fidelity Index provides a quantitative basis for evaluating whether specific fidelity gaps are likely to affect skill transfer—enabling evidence-based rather than assumption-based training device selection.
+
+### 7.4 Relationship to Simulation Fidelity Literature
+
+This work operationalizes concepts from the simulation fidelity literature:
+
+**Norman et al. [2]** found "minimal relationship between simulation fidelity and transfer of learning," but their analysis focused on *physical* (visual) fidelity, not *functional* (mechanical) fidelity. Engineering fidelity is a distinct construct.
+
+**Hamstra et al. [1]** called for "reconsidering fidelity" with emphasis on functional task alignment. The EFI framework directly addresses this call by quantifying the functional parameters relevant to CPR skill acquisition.
+
+**Psychological fidelity** (stress, realism) remains outside the scope of this mechanical characterization but represents an important complementary dimension for comprehensive manikin evaluation.
+
+### 7.5 Limitations
+
+Several limitations constrain the current work:
+
+**Adult compression vs. infant focus.** The most robust human reference data (Ruiz de Gauna) characterizes adult chest mechanics. Infant and pediatric chest biomechanics remain poorly characterized, limiting validation of infant manikins against human ground truth.
+
+**Static characterization.** The protocol characterizes steady-state mechanical properties. Dynamic changes during extended CPR (fatigue, softening) are acknowledged in the reference model but not yet implemented in manikin testing.
+
+**Limited manikin sample.** [Specific limitations to be documented based on actual testing conducted.]
+
+**Single-site validation.** Inter-laboratory reproducibility has not yet been established, though the standardized protocol and SI traceability are designed to enable this.
+
+### 7.6 Future Directions
+
+Several extensions would strengthen the engineering fidelity framework:
+
+1. **Pediatric biomechanical studies:** Clinical characterization of infant/child chest mechanics to establish age-appropriate reference envelopes
+
+2. **Dynamic characterization:** Time-varying mechanical properties during sustained compressions
+
+3. **Multi-center validation:** Inter-laboratory comparison to establish protocol reproducibility
+
+4. **Training outcome correlation:** Prospective studies linking EFI scores to clinical skill transfer
+
+5. **Manufacturer engagement:** Collaboration with manikin manufacturers to integrate engineering fidelity into design specifications
 
 ---
 
 ## 8. Conclusion
 
-*[To be drafted after discussion.]*
+This paper presents a data-driven framework for quantifying the engineering fidelity of CPR training manikins. By synthesizing published clinical datasets, we construct human reference envelopes for chest compression mechanics (adults) and ventilation mechanics (infants). A standardized characterization protocol with SI-traceable measurements and GUM-compliant uncertainty quantification enables objective comparison between manikins and human reference data.
+
+The Engineering Fidelity Index (EFI) transforms qualitative assessments ("high fidelity," "realistic feel") into quantitative metrics actionable for procurement decisions, regulatory standards, and design optimization. Rather than assuming that expensive, visually realistic manikins provide superior training, the EFI enables evidence-based evaluation of the mechanical properties that actually matter for skill transfer.
+
+Key findings include:
+
+1. **Comprehensive human reference data exists** for adult compression mechanics (n=615 patients) and infant ventilation mechanics (n=205 infants), enabling evidence-based manikin validation
+
+2. **Anatomical fidelity ≠ functional fidelity:** Prior work achieving anatomical mimicry failed to match human force-displacement magnitude, demonstrating that form is neither necessary nor sufficient for function
+
+3. **System-level validation is essential:** Component specifications cannot predict integrated system behavior; in phantoma characterization is required
+
+4. **Critical gap identified:** Infant chest compression biomechanics remain uncharacterized, limiting validation of infant manikins against human ground truth
+
+The engineering fidelity framework provides the measurement science foundation for a paradigm shift: from assumption-based to evidence-based CPR training device evaluation. We call for manufacturer transparency regarding mechanical specifications, regulatory standards incorporating engineering fidelity requirements, and continued clinical research to fill the identified evidence gaps.
+
+---
+
+## Acknowledgments
+
+[To be added]
+
+## Author Contributions
+
+[To be added]
+
+## Conflicts of Interest
+
+The authors declare no conflicts of interest.
+
+## Data Availability
+
+Raw characterization data and analysis scripts will be made available as supplementary material upon publication.
 
 ---
 
