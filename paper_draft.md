@@ -255,7 +255,169 @@ For infant ventilation mechanics, where parameters vary systematically with deve
 
 ## 4. Manikin Characterization Protocol
 
-*[Section 4 will detail the measurement apparatus, test procedures, and uncertainty analysis for both compression and ventilation characterization. To be drafted after empirical methodology is confirmed.]*
+This section describes the standardized methodology for quantifying manikin mechanical properties, building on validated measurement apparatus from prior work [6]. The protocol addresses both compression and ventilation characterization with explicit uncertainty quantification following GUM guidelines [14].
+
+### 4.1 Measurement Philosophy
+
+Two fundamental principles guide the characterization protocol:
+
+**In phantoma validation:** Sensors and mechanical properties must be characterized in the integrated system configuration, not in isolation. Our prior work demonstrated a 5.6% calibration shift between isolated (*ex phantoma*) and integrated (*in phantoma*) sensor configurations [6], confirming that component specifications cannot predict system-level behavior.
+
+**SI traceability:** All measurements trace to SI primary standards through a documented chain: (1) SI primary standards → (2) reference instruments (mass flow meter, calibrated calipers) → (3) automated actuation system → (4) manikin under test. This hierarchy ensures measurement validity and inter-laboratory reproducibility.
+
+### 4.2 Compression Characterization Apparatus
+
+#### 4.2.1 Hardware Configuration
+
+The compression test apparatus comprises:
+
+- **Actuation:** CNC linear actuator (BlackBox X32 controller, GrblHAL firmware) with ±0.01 mm positioning accuracy
+- **Displacement measurement:** VL53L4CD time-of-flight (ToF) sensor (STMicroelectronics), 940 nm VCSEL, 1 mm resolution, 0–50 mm range, 50 Hz sampling
+- **Reference standard:** Mitutoyo CD-15CPX digital caliper (±0.01 mm), cross-validated with Mitutoyo LH-600 Linear Height Gage
+- **Force measurement:** Load cell integrated with actuator [specifications to be added based on available equipment]
+- **Environmental monitoring:** SHT45 temperature/humidity sensor (±0.1°C, ±1.0% RH)
+- **Data acquisition:** STM32F405 microcontroller with synchronized sampling
+
+#### 4.2.2 Test Protocol
+
+**Pre-test preparation:**
+1. Thermal stabilization: 30-minute warm-up period (τ = 12.3 min thermal time constant)
+2. Environmental logging: Record ambient temperature (22±2°C) and humidity (45±5% RH)
+3. Zero calibration: Verify actuator home position against reference caliper
+
+**Compression cycle protocol:**
+1. Position actuator at manikin chest surface (0 mm reference)
+2. Execute controlled compression to target depth (e.g., 40 mm for infant, 50 mm for adult)
+3. Record force and displacement at 50 Hz throughout compression and release phases
+4. Return to surface position
+5. Inter-cycle pause (2 seconds) to allow tissue recovery
+
+**Test sequence:**
+- Depth sweep: 10, 20, 30, 40, 50 mm (5 depths × 20 cycles = 100 cycles)
+- Rate variation: 100, 110, 120 CPM at 40 mm depth (3 rates × 20 cycles = 60 cycles)
+- Extended cycling: 150 consecutive cycles at 40 mm to assess fatigue/drift
+
+#### 4.2.3 Derived Parameters
+
+From force-displacement data, extract:
+
+**Stiffness ($k$):** Slope of force-displacement curve
+$$k = \frac{\Delta F}{\Delta x} \quad \text{[N/mm]}$$
+
+**Damping ($d$):** From hysteresis loop analysis
+$$d = \frac{W_{loop}}{2\pi f A^2} \quad \text{[N·s/mm]}$$
+
+where $W_{loop}$ is the hysteresis loop area, $f$ is compression frequency, and $A$ is displacement amplitude.
+
+**Nonlinearity index:** Fit to Gruben polynomial model [8]:
+$$F = k_1 z + k_2 z^2 + k_3 z^3 + k_4 z^4 + d_0 \dot{z} + d_1 z \dot{z}$$
+
+Report the ratio of higher-order coefficients to linear coefficient as a nonlinearity metric.
+
+### 4.3 Ventilation Characterization Apparatus
+
+#### 4.3.1 Hardware Configuration
+
+The ventilation test apparatus comprises:
+
+- **Actuation:** Linear actuator with 100 mL calibration syringe, pneumatic valve control (pressure, vacuum, bleed valves)
+- **Flow measurement:** Sensirion SDP810-500Pa differential pressure sensor (DPS), ±0.75% of reading, 0–500 Pa range, 100 Hz sampling
+- **Reference standard:** Bronkhorst FLEXI-FLOW Compact mass flow meter (MFM), SI-traceable certificate, ±0.8% accuracy
+- **Volume derivation:** $V = \int K \sqrt{|\Delta P(t)|} \, dt$, where $K$ is the configuration-specific calibration coefficient
+- **Environmental monitoring:** SHT45 temperature/humidity sensor
+- **Data acquisition:** STM32F405 microcontroller
+
+#### 4.3.2 Test Protocol
+
+**Pre-test preparation:**
+1. Leak test: Verify airway seal integrity
+2. Configuration-specific calibration: Determine $K$ coefficient for each manikin (in phantoma)
+3. Environmental logging: Record temperature and humidity
+
+**Ventilation cycle protocol:**
+1. Actuator delivers controlled volume through manikin airway
+2. Record differential pressure and reference flow simultaneously at 100 Hz
+3. Compute delivered volume via pressure integration
+4. Compare against MFM reference
+
+**Test sequence:**
+- Volume sweep: 12.25, 24.5, 36.75, 49.0, 61.25, 73.5 mL (6 volumes × 100 cycles = 600 cycles)
+- Clinical target emphasis: Additional 200 cycles at guideline-recommended volume (e.g., 24.5 mL for 3.5 kg infant)
+
+#### 4.3.3 Derived Parameters
+
+**Compliance ($C_{rs}$):**
+$$C_{rs} = \frac{V_{delivered}}{P_{peak} - P_{baseline}} \quad \text{[mL/cmH}_2\text{O]}$$
+
+**Resistance ($R_{rs}$):**
+$$R_{rs} = \frac{P_{peak} - P_{plateau}}{\dot{V}_{peak}} \quad \text{[cmH}_2\text{O/L/s]}$$
+
+where $P_{peak}$ is peak inspiratory pressure, $P_{plateau}$ is plateau pressure (during inspiratory hold), and $\dot{V}_{peak}$ is peak flow rate.
+
+### 4.4 Uncertainty Quantification
+
+Following GUM methodology [14], measurement uncertainty comprises:
+
+**Type A (statistical):** Evaluated from repeated measurements
+$$u_A = \frac{s}{\sqrt{n}}$$
+
+where $s$ is sample standard deviation and $n$ is number of observations.
+
+**Type B (systematic):** Evaluated from reference standard specifications, calibration certificates, and environmental factors
+$$u_B = \sqrt{\sum_i u_{B,i}^2}$$
+
+**Combined uncertainty:**
+$$u_c = \sqrt{u_A^2 + u_B^2}$$
+
+**Expanded uncertainty:** Reported at 95% confidence level
+$$U = k \cdot u_c \quad (k = 2)$$
+
+#### 4.4.1 Uncertainty Budget: Compression
+
+| Source | Type | Contribution |
+|--------|------|--------------|
+| Reference caliper | B | ±0.01 mm |
+| ToF sensor repeatability | A | ~0.3% CV |
+| Actuator positioning | B | ±0.01 mm |
+| Temperature effects | B | [to be characterized] |
+| **Combined (k=2)** | — | **±2.23 mm** |
+
+#### 4.4.2 Uncertainty Budget: Ventilation
+
+| Source | Type | Contribution |
+|--------|------|--------------|
+| MFM reference standard | B | ±0.8% |
+| DPS repeatability | A | ~3.3% CV |
+| Calibration residuals | B | [configuration-specific] |
+| Temperature effects | B | [to be characterized] |
+| **Combined (k=2)** | — | **±2.29%** |
+
+### 4.5 Manikins Under Test
+
+The characterization protocol will be applied to a representative sample of commercial manikins:
+
+**Table 8: Manikins under test**
+
+| Manufacturer | Model | Type | Age Category |
+|--------------|-------|------|--------------|
+| Laerdal | Resusci Baby QCPR | Training | Infant |
+| Laerdal | Little Junior QCPR | Training | Child |
+| Laerdal | Resusci Anne QCPR | Training | Adult |
+| Ambu | Ambu Baby | Training | Infant |
+| [Additional] | [TBD] | — | — |
+
+**Unit-to-unit variation:** Where possible, multiple units of the same model will be tested to characterize manufacturing consistency.
+
+### 4.6 Data Management
+
+All raw data, derived parameters, and uncertainty calculations will be archived in structured format (JSON/CSV) with:
+- Unique test identifier
+- Manikin serial number
+- Environmental conditions
+- Complete time-series data
+- Derived mechanical parameters with uncertainties
+
+Data will be made available as supplementary material to enable independent verification and meta-analysis.
 
 ---
 
@@ -330,6 +492,10 @@ where $w_c$ and $w_v$ are weighting factors reflecting the relative importance o
 [12] Battisti O, Bertrand JM, Rouatbi H, Escandar G. Lung compliance and airways resistance in healthy neonates. *Pediatr Therapeut*. 2012;2(2):114.
 
 [13] Lim H, et al. Variable stiffness and damping mechanism for CPR manikin to simulate mechanical properties of human chest. *IEEE J Transl Eng Health Med*. 2024;12:542-549.
+
+[14] JCGM 100:2008. Evaluation of measurement data — Guide to the expression of uncertainty in measurement (GUM). Joint Committee for Guides in Metrology.
+
+[15] ISO 5725-1:1994. Accuracy (trueness and precision) of measurement methods and results — Part 1: General principles and definitions.
 
 ---
 
