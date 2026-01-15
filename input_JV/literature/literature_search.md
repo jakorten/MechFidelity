@@ -37,8 +37,10 @@ Much of the literature search was already done for the Proposition paper. Key da
 
 | Paper | Key Data | Proposition | PDF | Verified |
 |-------|----------|-------------|-----|----------|
-| **Huang et al. 2016** | Compliance 80-170 mL/kPa, Resistance 4-6 kPa/L/s | [x] Extracted | [ ] | [ ] |
-| **Battisti et al. 2012** | Neonatal lung compliance | [ ] | [ ] | [ ] |
+| **Huang et al. 2016** | Compliance 119.52±60.47 mL/kPa, Resistance 5.04 kPa/L/s | [x] Extracted | [ ] | [x] Web |
+| **Battisti et al. 2012** | Compliance 1.37-1.67 mL/cm H₂O/s, Resistance 0.048-0.060 | [x] Extracted | [ ] | [x] Web |
+
+**NEW:** Detailed extraction in `md_out/infant_respiratory_reference_values.md`
 
 ---
 
@@ -58,8 +60,13 @@ Much of the literature search was already done for the Proposition paper. Key da
 
 | Parameter | Value | Age Range | Source | Status |
 |-----------|-------|-----------|--------|--------|
-| Compliance (mL/kPa) | 80-170 | 1-96 wks | Huang 2016 | Extracted |
-| Resistance (kPa/L/s) | 4-6 | 1-96 wks | Huang 2016 | Extracted |
+| Compliance (mL/kPa) | 119.52 ± 60.47 | 1-96 wks | Huang 2016 | **Verified** |
+| Compliance range | 80-170 | age-dependent | Huang 2016 | **Verified** |
+| Resistance (kPa/L/s) | 5.04 (3.73-6.82) | 1-96 wks | Huang 2016 | **Verified** |
+| Compliance (mL/cm H₂O/s) | 1.37-1.67 | Day 1-21 | Battisti 2012 | **Verified** |
+| Resistance (cm H₂O/mL/s) | 0.048-0.060 | Day 1-21 | Battisti 2012 | **Verified** |
+
+**See:** `md_out/infant_respiratory_reference_values.md` for full details
 
 ### Evidence Gaps (MST Paper Contribution)
 
