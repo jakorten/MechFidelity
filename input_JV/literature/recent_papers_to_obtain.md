@@ -67,18 +67,23 @@ These papers have bot-protection and need manual download.
 
 ## Priority 2: Neonatal Chest Compression / CPR
 
-### Japan Compression Depth Study 2024
+### Japan Compression Depth Study 2024 - **OBTAINED**
 **Title:** Chest Compression Depth Targets in Critically Ill Infants and Children Measured With a Laser Distance Meter
 **Authors:** (Single-center retrospective study, Japan 2019-2022)
 **Journal:** Pediatr Crit Care Med, 2024
 **PMID:** [38602429](https://pubmed.ncbi.nlm.nih.gov/38602429/)
 **DOI:** [10.1097/PCC.0000000000003509](https://doi.org/10.1097/PCC.0000000000003509)
 
-**Key data:**
-- Target compression depth at 0 months: **2.7 cm (2.5-2.9 cm)**
-- Target compression depth at 2 months: **2.9 cm (2.7-3.2 cm)**
-- Finding: 1/3 depth targets shallower than current guidelines
-- 49% of infants 0-2 months would exceed safe thresholds using 4cm guideline
+**Status:** [x] Web verified - data extracted
+
+**Key data extracted:**
+- n=555 critically ill patients <8 years
+- Target depth at 0 months: **2.7 cm (2.5-2.9 cm)**
+- Target depth at 2 months: **2.9 cm (2.7-3.2 cm)**
+- **49% of infants 0-2 months would be over-compressed** using 4cm guideline
+- Full age-stratified table in extraction
+
+**See:** `md_out/infant_compression_reference_values.md`
 
 ---
 
@@ -106,11 +111,22 @@ These papers have bot-protection and need manual download.
 
 ## Priority 3: Guidelines
 
-### 2025 AHA Neonatal Resuscitation Guidelines
+### 2025 AHA Neonatal Resuscitation Guidelines - **OBTAINED**
 **Title:** Part 5: Neonatal Resuscitation: 2025 AHA Guidelines
 **Journal:** Circulation 2025
 **DOI:** [10.1161/CIR.0000000000001367](https://doi.org/10.1161/CIR.0000000000001367)
 **Link:** https://www.ahajournals.org/doi/10.1161/CIR.0000000000001367
+
+**Status:** [x] Web verified - key recommendations extracted
+
+**Key changes extracted:**
+- Compression depth: ~1/3 AP diameter (~4cm for infants)
+- **Two-finger technique ELIMINATED** - ineffective for proper depth
+- Approved: Two thumbs-encircling hands OR one-hand technique
+- Rate: 100-120 compressions/min
+- Ventilation rate: 30-60/min (expanded from 40-60)
+
+**See:** `md_out/infant_compression_reference_values.md`
 
 ---
 
@@ -131,6 +147,8 @@ These papers have bot-protection and need manual download.
 | **Stoecklin et al. - Preterm CL/Ccw mechanics** | 2024 | [x] Have PDF - extracted |
 | **Reiss et al. - Preterm ventilation compliance** | 2024 | [x] Web verified - extracted |
 | **Diedericks et al. - Chest wall role review** | 2025 | [x] Web verified - extracted |
+| **Japan CC depth - Infant compression targets** | 2024 | [x] Web verified - extracted |
+| **2025 AHA Guidelines - Neonatal resuscitation** | 2025 | [x] Web verified - extracted |
 
 ---
 

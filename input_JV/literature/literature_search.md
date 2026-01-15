@@ -67,10 +67,12 @@ Much of the literature search was already done for the Proposition paper. Key da
 
 | Paper | Year | Key Data | PDF | Priority |
 |-------|------|----------|-----|----------|
-| **Japan CC depth** | 2024 | Target depth 0mo=2.7cm, 2mo=2.9cm (shallower than guidelines!) | [ ] | **HIGH** |
+| **Japan CC depth** | 2024 | Target depth 0mo=2.7cm, 2mo=2.9cm (shallower than guidelines!) | [x] Web | **OBTAINED** |
 | **SURV1VE Trial** | 2024 | Sustained inflation + CC vs 3:1 ratio in newborns | [ ] | Medium |
 | **Novel CC technique** | 2025 | 92.4% adequate rate with novel technique | [ ] | Low |
-| **2025 AHA Guidelines** | 2025 | Latest neonatal resuscitation guidelines | [ ] | **HIGH** |
+| **2025 AHA Guidelines** | 2025 | Latest neonatal resuscitation guidelines | [x] Web | **OBTAINED** |
+
+**NEW:** Detailed extraction in `md_out/infant_compression_reference_values.md`
 
 ---
 
