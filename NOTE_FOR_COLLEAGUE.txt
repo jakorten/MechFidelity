@@ -1,0 +1,54 @@
+NOTE FOR COLLEAGUE
+==================
+Date: 2026-01-15
+
+SCOPE CHANGE: Infant Ventilation Only
+-------------------------------------
+
+DR-001 has been decided: We are focusing on INFANT VENTILATION only.
+Compression is OUT OF SCOPE.
+
+WHY?
+----
+- No human stiffness/damping data exists for infant chests
+- Japan 2024 gives depth targets (2.7-4.0 cm) but NO force data
+- Babic 2017 confirms: "Little research has been performed to evaluate
+  the force required in younger infants"
+- Without human reference values, we cannot benchmark manikin compression
+
+We HAVE strong human reference data for infant ventilation:
+- Huang 2016: n=205 infants, compliance 78-171 mL/kPa, resistance 3.7-6.4 kPa/L/s
+- Stoecklin 2024: n=23 preterm, Ccw/CL ratio ~3:1
+- Diedericks 2025: confirms Ccw ~3x CL in neonates
+
+IMPLICATIONS
+------------
+- Load cell firmware integration: DEPRIORITIZED
+- Focus: Airway pressure sensor (discuss with Bronkhorst re EL-PRESS P-506C)
+- Alternative: MPXV5010DP (~10 EUR) + water column reference
+
+FILES NEEDING UPDATE
+--------------------
+These still say "compression + ventilation" - need revision:
+- MST_paper_outline.md
+- paper_draft.md
+- MST_paper_supervisor_summary.md
+
+See backlog.md and DR-001_reference_model_scope.md for full rationale.
+
+CLAIM VERIFICATION STATUS
+-------------------------
+See: input_JV/claim_verification_summary.txt
+- 75% of in-scope claims verified (9/12)
+- P0 at 86% (6/7)
+- Remaining claims blocked by our own experiments
+
+NEXT STEPS
+----------
+1. Discuss Bronkhorst EL-PRESS P-506C for traceable airway pressure
+2. Inventory available infant manikins (DR-002)
+3. Update paper structure to ventilation-only scope
+
+Questions? Check backlog.md or the decision record.
+
+- JV
