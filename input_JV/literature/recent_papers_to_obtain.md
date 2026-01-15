@@ -29,25 +29,39 @@ These papers have bot-protection and need manual download.
 
 ---
 
-### Reiss et al. 2024
+### Reiss et al. 2024 - **OBTAINED**
 **Title:** Premature Infants Show Consistently Good Lung Compliance During Conventional Mechanical Ventilation
 **Journal:** Pediatric Pulmonology, Dec 2024
 **DOI:** [10.1002/ppul.27396](https://doi.org/10.1002/ppul.27396)
 **PMC:** PMC11748114
 **Link:** https://pmc.ncbi.nlm.nih.gov/articles/PMC11748114/
 
-**Key finding:** No compliance deterioration in premature infants on CMV with surfactant
+**Status:** [x] Web verified - data extracted
+
+**Key data extracted:**
+- n=56 extremely preterm (GA 25.22 wks)
+- Cdyn baseline: 0.28 mL/cmH₂O → 0.43 at 120h
+- No compliance deterioration (contrary to animal models)
+
+**See:** `md_out/infant_respiratory_reference_values.md`
 
 ---
 
-### Diedericks et al. 2025
+### Diedericks et al. 2025 - **OBTAINED**
 **Title:** Role of the Chest Wall in Newborn Respiratory Function at Birth
 **Journal:** FASEB J 39:e71064
 **DOI:** [10.1096/fj.202502372R](https://doi.org/10.1096/fj.202502372R)
 **PMC:** PMC12464809
 **Link:** https://pmc.ncbi.nlm.nih.gov/articles/PMC12464809/
 
-**Key content:** Review of chest wall influence on respiratory adaptation at birth
+**Status:** [x] Web verified - data extracted
+
+**Key findings:**
+- Confirms Ccw ≈ 3× CL in term neonates
+- By 1 year: Ccw ≈ CL (rib ossification)
+- Cartilaginous ribs → high flexibility but mechanical instability
+
+**See:** `md_out/infant_respiratory_reference_values.md`
 
 ---
 
@@ -115,6 +129,8 @@ These papers have bot-protection and need manual download.
 | Lim et al. - Variable stiffness CPR manikin | 2024 | [x] Have PDF |
 | Ruiz de Gauna et al. - Adult chest mechanics | 2023 | [x] Have PDF |
 | **Stoecklin et al. - Preterm CL/Ccw mechanics** | 2024 | [x] Have PDF - extracted |
+| **Reiss et al. - Preterm ventilation compliance** | 2024 | [x] Web verified - extracted |
+| **Diedericks et al. - Chest wall role review** | 2025 | [x] Web verified - extracted |
 
 ---
 

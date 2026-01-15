@@ -151,6 +151,64 @@ First postsurfactant-era study measuring static compliance of **both lung (CL) a
 
 ---
 
+## Source 5: Reiss et al. 2024 (Pediatric Pulmonology)
+
+**Citation:** Reiss LK, et al. "Premature Infants Show Consistently Good Lung Compliance During Conventional Mechanical Ventilation." Pediatric Pulmonology. 2024 Dec.
+
+**DOI:** [10.1002/ppul.27396](https://doi.org/10.1002/ppul.27396)
+**PMC:** [PMC11748114](https://pmc.ncbi.nlm.nih.gov/articles/PMC11748114/)
+
+### Sample
+- **n = 56** extremely preterm infants
+- **Gestational age:** 25.22 ± 1.47 weeks
+- **Birthweight:** 678.71 ± 138.14 g
+- **Study period:** 2016-2022
+
+### Dynamic Compliance During Ventilation
+
+| Timepoint | Cdyn (mL/cmH₂O) | Notes |
+|-----------|-----------------|-------|
+| Baseline | 0.28 ± 0.26 | |
+| 1 hour | 0.28 ± 0.29 | |
+| 12 hours | - | p=0.0425 (significant increase) |
+| 24 hours | 0.37 ± 0.33 | p=0.0162 |
+| 120 hours | 0.43 ± 0.38 | |
+
+### Ventilation Parameters
+- PEEP: 7.51 ± 1.16 cmH₂O
+- Peak inspiratory pressure: 20.64 ± 2.73 cmH₂O
+- Tidal volume: ~5 mL/kg
+- Ventilation duration: 2.68 ± 2.35 days
+
+### Key Finding
+**No compliance deterioration during mechanical ventilation** - contrary to animal models predicting rapid decline. Higher PEEP maintaining alveolar recruitment appeared protective.
+
+---
+
+## Source 6: Diedericks et al. 2025 (FASEB J) - Review
+
+**Citation:** Diedericks L, et al. "Role of the Chest Wall in Newborn Respiratory Function at Birth." FASEB J. 2025;39:e71064.
+
+**DOI:** [10.1096/fj.202502372R](https://doi.org/10.1096/fj.202502372R)
+**PMC:** [PMC12464809](https://pmc.ncbi.nlm.nih.gov/articles/PMC12464809/)
+
+### Key Findings
+
+1. **Ccw/CL ratio in term neonates:** Chest wall ~3× more compliant than lungs (confirms Stoecklin 2024)
+2. **Structural basis:** Cartilaginous ribs (not ossified) → high flexibility but mechanical instability
+3. **Developmental timeline:** By 1 year, Ccw ≈ CL as rib ossification progresses
+4. **Functional implications:**
+   - High Ccw enables accommodation of air and cleared liquid at birth
+   - But causes paradoxical inward chest movement during breathing
+   - Increases work of breathing and fatigue risk in preterm infants
+
+### Relevance to Manikin Design
+Confirms that infant manikins should have:
+- Very compliant chest wall relative to lungs
+- Age-appropriate stiffness (newborn much more compliant than 1-year-old)
+
+---
+
 ## Unit Conversions
 
 | From | To | Factor |
@@ -179,14 +237,17 @@ First postsurfactant-era study measuring static compliance of **both lung (CL) a
 | **Crs/kg** | 0.69 mL/cmH₂O/kg | 0.58-0.96 | 36 wk PMA | Stoecklin 2024 |
 | **CL/kg** | 0.95 mL/cmH₂O/kg | 0.72-1.42 | 36 wk PMA | Stoecklin 2024 |
 | **Ccw/kg** | 3.0 mL/cmH₂O/kg | 2.5-3.9 | 36 wk PMA | Stoecklin 2024 |
+| **Cdyn (ventilated)** | 0.28→0.43 mL/cmH₂O | - | 25 wk GA | Reiss 2024 |
 
 ### Key Observations for Manikin Design
 1. Compliance increases with age (80 → 170 mL/kPa over 96 weeks)
 2. Resistance decreases with age (6 → 4 kPa/L/s over 96 weeks)
 3. Significant variability between individuals (SD ~50% of mean for compliance)
 4. Dynamic changes over first 3 weeks of life
-5. **Chest wall 3× more compliant than lungs** (Ccw/CL ≈ 3:1) - Stoecklin 2024
+5. **Chest wall 3× more compliant than lungs** (Ccw/CL ≈ 3:1) - Stoecklin 2024, Diedericks 2025
 6. **BPD reduces all compliances** - important for realistic manikin range
+7. **By 1 year: Ccw ≈ CL** (chest wall stiffens with rib ossification) - Diedericks 2025
+8. **No compliance deterioration during ventilation** - Reiss 2024
 
 ---
 
@@ -207,9 +268,11 @@ These values define the **human reference envelope** for infant ventilation mech
 - [Battisti et al. 2012 - Pediatr Therapeut](https://www.researchgate.net/publication/269545020_Lung_Compliance_and_Airways_Resistance_in_Healthy_Neonates)
 - [Deranged Physiology - Neonatal Respiratory Physiology](https://derangedphysiology.com/main/cicm-primary-exam/respiratory-system/Chapter-926/neonatal-respiratory-physiology)
 - [Stoecklin et al. 2024 - J Appl Physiol](https://doi.org/10.1152/japplphysiol.00561.2023) **[PDF OBTAINED]**
+- [Reiss et al. 2024 - Pediatric Pulmonology](https://pmc.ncbi.nlm.nih.gov/articles/PMC11748114/) **[WEB VERIFIED]**
+- [Diedericks et al. 2025 - FASEB J](https://pmc.ncbi.nlm.nih.gov/articles/PMC12464809/) **[WEB VERIFIED]**
 
 ---
 
 *Extracted: 2026-01-15*
-*Updated: 2026-01-15 - Added Stoecklin 2024 (critical preterm CL/Ccw data)*
+*Updated: 2026-01-15 - Added Stoecklin 2024, Reiss 2024, Diedericks 2025*
 *Status: [VERIFIED] from web sources and PDF*
