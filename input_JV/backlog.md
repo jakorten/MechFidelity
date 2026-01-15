@@ -11,6 +11,7 @@
 - [x] Adopt V&V methodology from Proposition (DR-000)
 - [x] Create directory structure
 - [x] Create claim registry template
+- [x] Add AI-assisted review prompts (adapted from TIM review guide)
 - [ ] Populate claim registry with initial claims from outline
 
 ### Human Reference Model (Literature)
@@ -90,6 +91,11 @@
 - [x] Created DR-000 (methodology adoption decision)
 - [x] Created this backlog
 - [x] Updated CLAUDE.md with new structure
+- [x] Added AI-assisted review prompts adapted from TIM review guide:
+  - `MST_Review_Prompt_Single_Stage.md` - comprehensive review
+  - `MST_Review_Prompt_Stage1.md` - gate decision (proceed/reject)
+  - `MST_Review_Prompt_Stage2.md` - detailed section-by-section review
+  - `USAGE_GUIDE.md` - how to use the review prompts
 
 ---
 
