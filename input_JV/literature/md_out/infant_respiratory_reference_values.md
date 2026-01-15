@@ -100,6 +100,57 @@
 
 ---
 
+## Source 4: Stoecklin et al. 2024 (J Appl Physiol) - **CRITICAL**
+
+**Citation:** Stoecklin B, et al. "Respiratory and chest wall mechanics in very preterm infants." J Appl Physiol. 2024;136(6):1499-1506.
+
+**DOI:** [10.1152/japplphysiol.00561.2023](https://doi.org/10.1152/japplphysiol.00561.2023)
+
+### Why Critical
+First postsurfactant-era study measuring static compliance of **both lung (CL) and chest wall (Ccw)** separately in preterm infants. Previous studies only measured total respiratory system compliance (Crs).
+
+### Sample
+- **n = 23** very preterm infants
+- **Gestational age at birth:** 27.2 ± 2.0 weeks
+- **Birthweight:** 1043 ± 310 g
+- **Postmenstrual age at testing:** 36.6 ± 0.6 weeks
+- **Weight at testing:** 2508 ± 383 g
+- **13 with BPD**, 10 without BPD
+
+### Reference Values (Median, IQR)
+
+| Parameter | All Infants | No BPD | BPD | Units |
+|-----------|-------------|--------|-----|-------|
+| **Crs/kg** | 0.69 (0.6) | 0.96 (0.5) | 0.58 (0.3) | mL/cmH₂O/kg |
+| **CL/kg** | 0.95 (1.0) | 1.42 (0.9) | 0.72 (0.6) | mL/cmH₂O/kg |
+| **Ccw/kg** | 3.0 (2.4) | 3.9 (2.9) | 2.5 (1.2) | mL/cmH₂O/kg |
+
+### Key Findings
+
+1. **Chest wall 3× more compliant than lungs:** Ccw/CL ratio ≈ 3:1 in preterm infants
+2. **BPD reduces all compliances:**
+   - Crs: p = 0.013
+   - CL: p = 0.019
+   - Ccw: p = 0.027
+3. **Ccw/CL ratio unchanged by BPD** - both compartments affected proportionally
+4. **First postsurfactant-era data** - previous studies from 1980s-90s (presurfactant era)
+
+### Methodology
+- Esophageal balloon catheter for pleural pressure
+- Multiple occlusion technique (MOT) with face mask
+- Static measurements during apnea
+- Unsedated, spontaneously breathing infants
+
+### Absolute Values (calculated from weight at testing ~2.5 kg)
+
+| Parameter | Typical Value | Units |
+|-----------|---------------|-------|
+| Crs | ~1.7 | mL/cmH₂O |
+| CL | ~2.4 | mL/cmH₂O |
+| Ccw | ~7.5 | mL/cmH₂O |
+
+---
+
 ## Unit Conversions
 
 | From | To | Factor |
@@ -125,12 +176,17 @@
 | Resistance (Rrs) | 5.04 kPa/L/s | 3.73-6.82 | 1-96 wks | Huang 2016 |
 | Compliance (Crs) | 1.37-1.67 mL/cm H₂O/s | - | Day 1-21 | Battisti 2012 |
 | Resistance (Rrs) | 0.048-0.060 cm H₂O/mL/s | - | Day 1-21 | Battisti 2012 |
+| **Crs/kg** | 0.69 mL/cmH₂O/kg | 0.58-0.96 | 36 wk PMA | Stoecklin 2024 |
+| **CL/kg** | 0.95 mL/cmH₂O/kg | 0.72-1.42 | 36 wk PMA | Stoecklin 2024 |
+| **Ccw/kg** | 3.0 mL/cmH₂O/kg | 2.5-3.9 | 36 wk PMA | Stoecklin 2024 |
 
 ### Key Observations for Manikin Design
 1. Compliance increases with age (80 → 170 mL/kPa over 96 weeks)
 2. Resistance decreases with age (6 → 4 kPa/L/s over 96 weeks)
 3. Significant variability between individuals (SD ~50% of mean for compliance)
 4. Dynamic changes over first 3 weeks of life
+5. **Chest wall 3× more compliant than lungs** (Ccw/CL ≈ 3:1) - Stoecklin 2024
+6. **BPD reduces all compliances** - important for realistic manikin range
 
 ---
 
@@ -150,8 +206,10 @@ These values define the **human reference envelope** for infant ventilation mech
 - [Huang et al. 2016 - J Thorac Dis](https://pubmed.ncbi.nlm.nih.gov/27076948/)
 - [Battisti et al. 2012 - Pediatr Therapeut](https://www.researchgate.net/publication/269545020_Lung_Compliance_and_Airways_Resistance_in_Healthy_Neonates)
 - [Deranged Physiology - Neonatal Respiratory Physiology](https://derangedphysiology.com/main/cicm-primary-exam/respiratory-system/Chapter-926/neonatal-respiratory-physiology)
+- [Stoecklin et al. 2024 - J Appl Physiol](https://doi.org/10.1152/japplphysiol.00561.2023) **[PDF OBTAINED]**
 
 ---
 
 *Extracted: 2026-01-15*
-*Status: [VERIFIED] from web sources - PDF verification recommended*
+*Updated: 2026-01-15 - Added Stoecklin 2024 (critical preterm CL/Ccw data)*
+*Status: [VERIFIED] from web sources and PDF*

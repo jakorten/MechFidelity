@@ -59,7 +59,7 @@ Much of the literature search was already done for the Proposition paper. Key da
 
 | Paper | Year | Key Data | PDF | Priority |
 |-------|------|----------|-----|----------|
-| **Stoecklin et al.** | 2024 | First postsurfactant Crs, CL, Ccw in preterm ± BPD | [ ] | **HIGH** |
+| **Stoecklin et al.** | 2024 | First postsurfactant Crs, CL, Ccw in preterm ± BPD | [x] | **OBTAINED** |
 | **Reiss et al.** | 2024 | No compliance deterioration in preterm on CMV | [ ] | Medium |
 | **Diedericks et al.** | 2025 | Chest wall role at birth (review) | [ ] | Medium |
 

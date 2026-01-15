@@ -9,18 +9,23 @@ These papers have bot-protection and need manual download.
 
 ## Priority 1: Neonatal Respiratory Mechanics
 
-### Stoecklin et al. 2024 - **CRITICAL**
+### Stoecklin et al. 2024 - **OBTAINED**
 **Title:** Respiratory and chest wall mechanics in very preterm infants
 **Journal:** J Appl Physiol 136(6):1499-1506
 **DOI:** [10.1152/japplphysiol.00561.2023](https://doi.org/10.1152/japplphysiol.00561.2023)
 **Link:** https://journals.physiology.org/doi/full/10.1152/japplphysiol.00561.2023
 
-**Why critical:** First postsurfactant-era data on static Crs, CL, Ccw in preterm infants ± BPD
+**Status:** [x] PDF obtained - `pdfs/stoecklin_2024_preterm_mechanics.pdf`
 
-**Key data (from abstract):**
-- Characterized static compliance of lung (CL) and chest wall (Ccw)
-- Preterm infants at 36 weeks PMA
-- Compared with/without BPD
+**Key data extracted:**
+- n=23 preterm infants (GA 27.2±2.0 wks, tested at 36 wk PMA)
+- Crs/kg: 0.69 (0.6) mL/cmH₂O/kg
+- CL/kg: 0.95 (1.0) mL/cmH₂O/kg
+- Ccw/kg: 3.0 (2.4) mL/cmH₂O/kg
+- **Ccw ≈ 3× CL in preterm infants**
+- BPD reduces all compliances (p<0.05)
+
+**See:** `md_out/infant_respiratory_reference_values.md` for full extraction
 
 ---
 
@@ -109,6 +114,7 @@ These papers have bot-protection and need manual download.
 |-------|------|--------|
 | Lim et al. - Variable stiffness CPR manikin | 2024 | [x] Have PDF |
 | Ruiz de Gauna et al. - Adult chest mechanics | 2023 | [x] Have PDF |
+| **Stoecklin et al. - Preterm CL/Ccw mechanics** | 2024 | [x] Have PDF - extracted |
 
 ---
 
