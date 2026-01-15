@@ -126,9 +126,29 @@ The MST paper aims to establish a human reference model for CPR manikin fidelity
 
 ## Decision
 
-**TBD** — Awaiting manikin inventory and co-author input.
+**DECIDED: Option B — Infants Only (Compressions + Ventilations)**
+
+### Rationale
+- Adult manikins not available for testing
+- Infant focus provides clearer novelty (less competing work)
+- Strong human reference data for infant ventilation
+- Partial human data for infant compression (depth targets)
+
+### Final Scope
+
+| Domain | Include | Human Data Quality | Notes |
+|--------|---------|-------------------|-------|
+| Infant compression | ✓ | Partial (depth only) | Benchmark against Japan 2024 targets |
+| Infant ventilation | ✓ | Strong | Benchmark against Huang 2016, Stoecklin 2024 |
+| Adult compression | ✗ | Strong | No manikins available |
+| Adult ventilation | ✗ | Limited | No manikins available |
+
+### Key Claims Enabled
+- C5: Infant chest properties uncharacterized → MST fills gap
+- C7: Infant compression depth targets (2.7-4.0 cm age-dependent)
+- V1-V3: Infant ventilation mechanics (compliance, resistance, Ccw/CL ratio)
 
 ---
 
 *Created: 2026-01-15*
-*Last updated: 2026-01-15*
+*Decided: 2026-01-15 — Infants only per resource constraint*
