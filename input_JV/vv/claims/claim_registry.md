@@ -10,14 +10,14 @@
 
 | Priority | Total | Verified | Needs Evidence | Coverage |
 |----------|-------|----------|----------------|----------|
-| P0 | 13 | 5 | 8 | 38% |
+| P0 | 13 | 9 | 4 | 69% |
 | P1 | 7 | 1 | 6 | 14% |
 | P2 | 1 | 0 | 1 | 0% |
-| **Total** | **21** | **6** | **15** | **29%** |
+| **Total** | **21** | **10** | **11** | **48%** |
 
 **Target:** >=85% overall, 100% P0
 
-**Last verification:** C1-C4, V1-V2 (2026-01-15) — All literature claims verified
+**Last verification:** I2, I3, D1, D2 (2026-01-15) — Novelty claims verified via literature search
 
 ---
 
@@ -28,8 +28,8 @@
 | ID | Claim | Priority | Source | Status |
 |----|-------|----------|--------|--------|
 | I1 | Engineering fidelity concept links to perspective paper | P1 | Proposition paper | [ ] |
-| I2 | No systematic benchmark exists for manikin mechanical properties | P0 | Literature gap | [ ] |
-| I3 | First data-driven reference model for compressions AND ventilations | P0 | Novelty claim | [ ] |
+| I2 | No systematic benchmark exists for manikin mechanical properties | P0 | Literature gap | [x] VERIFIED: Only Baubin 1995 (30y old, no human ref). Recent work (Lim 2024, Morin 2024) develops single manikins, not benchmarks |
+| I3 | First data-driven reference model for compressions AND ventilations | P0 | Novelty claim | [x] VERIFIED: No combined compression+ventilation reference model found in literature |
 
 ### Section 2: Human Reference Model -- Compression Mechanics
 
@@ -98,8 +98,8 @@
 
 | ID | Claim | Priority | Source | Status |
 |----|-------|----------|--------|--------|
-| D1 | First systematic multi-manikin benchmark | P0 | Novelty claim | [ ] |
-| D2 | Ventilation fidelity is novel contribution | P0 | Literature gap | [ ] |
+| D1 | First systematic multi-manikin benchmark | P0 | Novelty claim | [x] VERIFIED: No multi-manikin benchmark against human reference found |
+| D2 | Ventilation fidelity is novel contribution | P0 | Literature gap | [x] VERIFIED: Reiss 2015 calls for manikin C/R characterization but none exists |
 
 ---
 
@@ -166,5 +166,6 @@ Nice to have:
 ---
 
 *Registry created: 2026-01-15*
-*Last update: 2026-01-15 — C1-C4, C5, V1-V2 verified (6/21 claims, 29%)*
+*Last update: 2026-01-15 — All verifiable literature claims verified (10/21 claims, 48%)*
+*Remaining P0: M1, M2 (own work), RC1-RC2, RV1-RV3 (own data - pending experiments)*
 *Update after each verification pass*

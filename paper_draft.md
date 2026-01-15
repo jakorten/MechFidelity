@@ -30,6 +30,8 @@ Previous work has approached manikin characterization from two directions:
 
 **Anatomical fidelity approaches** have sought to replicate human anatomy with increasing precision. Thielen et al. [3] developed an infant manikin with 3D-printed ribs, anatomically shaped lungs, and embedded cardiovascular structures. While their design exhibited nonlinear force-displacement behavior qualitatively similar to humans, the authors acknowledged that "the force required to achieve similar compression depths in humans is considerably higher" [3]—indicating that anatomical mimicry does not guarantee functional equivalence.
 
+**Variable-property manikins** represent a more recent approach. Lim et al. [13] developed a manikin with adjustable stiffness (5.3–13.6 N/mm) and damping (0.13–0.51 N·s/mm), designed to span the range of human chest properties reported by Nysæther et al. [14]. While such systems enable exploration of rescuer performance across different patient types, they do not address the need for systematic validation of commercial training manikins against human reference data.
+
 **Component-level specifications** from manufacturers provide nominal stiffness values, but these are typically measured *ex phantoma* (isolated components) rather than *in phantoma* (integrated system). Our prior work demonstrated calibration shifts of 5.6% when sensors were integrated into manikins, with deviations of 120–130× from datasheet specifications [6]. This finding suggests that system-level characterization is essential.
 
 **The critical gap** is the absence of:
@@ -111,6 +113,8 @@ Tomlinson et al. [9] characterized force-displacement during actual OHCA CPR:
 | Mean compression depth | 42 ± 8 mm | During OHCA CPR |
 | Force for 38mm depth | < 490 N | 96% of patients |
 
+Nysæther et al. [14] measured stiffness and damping in n=59 OHCA patients, reporting mean force of 270 ± 150 N at 38mm depth (lognormal distribution) and damping coefficient of 169 ± 60 N·s/m. Their data informed development of research manikins with eight percentile-based stiffness profiles spanning the population range.
+
 #### 2.1.4 Live Tissue vs. Cadaver
 
 A critical methodological consideration comes from Arbogast et al. [10], who compared live (perfused) tissue response to post-mortem cadaver data:
@@ -141,7 +145,7 @@ Synthesizing the above sources, we define the adult chest compression reference 
 | Stiffness ($k$) | 92 N/cm | 113 N/cm | Ruiz de Gauna 2023 (±2 SD) |
 | Compression damping ($d_c$) | 2.4 N·s/cm | 3.3 N·s/cm | Ruiz de Gauna 2023 |
 | Recoil damping ($d_r$) | 4.0 N·s/cm | 5.8 N·s/cm | Ruiz de Gauna 2023 |
-| Force at 50mm | 200 N | 500 N | Tomlinson 2007, Lim 2024 |
+| Force at 50mm | 200 N | 500 N | Nysæther 2008, Tomlinson 2007 |
 | Behavior | Nonlinear with hysteresis | — | Multiple sources |
 | Compression/recoil asymmetry | Required | — | Ruiz de Gauna 2023 |
 
@@ -593,9 +597,11 @@ Raw characterization data and analysis scripts will be made available as supplem
 
 [13] Lim H, et al. Variable stiffness and damping mechanism for CPR manikin to simulate mechanical properties of human chest. *IEEE J Transl Eng Health Med*. 2024;12:542-549.
 
-[14] JCGM 100:2008. Evaluation of measurement data — Guide to the expression of uncertainty in measurement (GUM). Joint Committee for Guides in Metrology.
+[14] Nysæther JB, Dorph E, Rafoss I, Steen PA. Manikins with human-like chest properties—a new tool for chest compression research. *IEEE Trans Biomed Eng*. 2008;55(11):2643-2650.
 
-[15] ISO 5725-1:1994. Accuracy (trueness and precision) of measurement methods and results — Part 1: General principles and definitions.
+[15] JCGM 100:2008. Evaluation of measurement data — Guide to the expression of uncertainty in measurement (GUM). Joint Committee for Guides in Metrology.
+
+[16] ISO 5725-1:1994. Accuracy (trueness and precision) of measurement methods and results — Part 1: General principles and definitions.
 
 ---
 
