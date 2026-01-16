@@ -145,11 +145,11 @@ See: `DR-001_reference_model_scope.md`
 
 1. **MPXV5010GP ×5 ordered** (2026-01-15) — pin-compatible replacement for MPXV5050
    - 0-10 kPa range, ±0.25 kPa accuracy
-   - Serves both C/R measurement and blocked airway detection
-   - Multiple units for spares + sensor variation check
-2. **Discuss with Bronkhorst** re: pressure calibration reference
-   - Option A: EL-PRESS P-506C (traceable, automated)
-   - Option B: Water column manometer (primary standard, manual)
+   - Backup / blocked airway detection
+2. **Bronkhorst: EL-PRESS (0-100 mbar) confirmed** (2026-01-16)
+   - Bronkhorst will provide overpressure sensor in 100 mbar range
+   - SI-traceable, factory calibrated
+   - Primary sensor for Paw measurement + calibration reference
 3. **Inventory infant manikins** (DR-002)
 4. ~~Load cell firmware integration~~ — deprioritized per DR-001 (ventilation focus)
 5. ~~Decision on reference model scope (DR-001)~~ — **DECIDED: infant ventilation**
