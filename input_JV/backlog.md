@@ -81,10 +81,35 @@
 
 See: `DR-001_reference_model_scope.md`
 
-### DR-002: Manikin Selection (PENDING)
+### DR-002: Manikin Selection (IN PROGRESS)
 **Decision needed:** Which infant manikins to characterize?
 
-**Action:** Inventory available infant manikins
+**Status:** Sufficient manikins available (own inventory + WKZ access)
+
+**Action:** Define test matrix - which models, how many units per model
+
+### DR-003: Lamb Reference Data (IN PROGRESS)
+**Decision needed:** Can lamb chest compression data serve as reference for infant manikin validation?
+
+**Potential source:** Arjen ten Pas (LUMC) - advisor, potential data provider
+
+**If available, need:**
+- Force-displacement measurements (stiffness k in N/mm)
+- Hysteresis data (damping coefficient)
+- Sample size (n) and weight range
+- Publication/source for citation
+
+**Impact:** Would enable fidelity index for compression (not just descriptive characterization)
+
+---
+
+## Collaborators
+
+| Name | Affiliation | Role | Notes |
+|------|-------------|------|-------|
+| Timo de Raad | WKZ, NRR, ERC | Co-author | Clinical/resuscitation expertise |
+| Arjen ten Pas | LUMC | Advisor | Potential lamb data provider (DR-003) |
+| Jozua van Duuren | WKZ | Co-author/Advisor | Specialized nurse, involved in prior papers |
 
 ---
 
