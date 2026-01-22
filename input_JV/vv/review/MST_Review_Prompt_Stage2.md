@@ -190,7 +190,7 @@ Use 1-5 scoring for each section:
 **Interpretation vs Presentation:**
 [Do results interpret findings or just present data?]
 
-**Engineering Fidelity Gap Analysis (for this paper):**
+**Mechanical Fidelity Gap Analysis (for this paper):**
 [Is the gap between human reference and manikin data clearly quantified?]
 
 **Suggested Improvements:**

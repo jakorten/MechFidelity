@@ -1,5 +1,5 @@
 CLAIM VERIFICATION SUMMARY
-MST Paper: Engineering Fidelity of CPR Training Manikins
+MST Paper: Mechanical Fidelity of CPR Training Manikins
 Date: 2026-01-15
 Scope: Infant VENTILATION only (compression out of scope - no human stiffness/damping data)
 

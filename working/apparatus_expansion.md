@@ -1,6 +1,6 @@
-# Apparatus Expansion: TIM → Engineering Fidelity
+# Apparatus Expansion: TIM → Mechanical Fidelity
 
-**Goal:** Expand current IEEE TIM sensor validation apparatus to enable manikin mechanical characterization for the Engineering Fidelity paper.
+**Goal:** Expand current IEEE TIM sensor validation apparatus to enable manikin mechanical characterization for the Mechanical Fidelity paper.
 
 ---
 
@@ -8,7 +8,7 @@
 
 ### Compression Apparatus
 
-| Capability | TIM Paper | Engineering Fidelity | Gap |
+| Capability | TIM Paper | Mechanical Fidelity | Gap |
 |------------|-----------|---------------------|-----|
 | Displacement measurement | ✅ ToF sensor (±2mm) | ✅ Required | None |
 | Automated actuation | ✅ CNC (±0.01mm) | ✅ Required | None |
@@ -20,7 +20,7 @@
 
 ### Ventilation Apparatus
 
-| Capability | TIM Paper | Engineering Fidelity | Gap |
+| Capability | TIM Paper | Mechanical Fidelity | Gap |
 |------------|-----------|---------------------|-----|
 | Volume delivery | ✅ Syringe actuator | ✅ Required | None |
 | Pressure measurement | ✅ DPS (±0.75%) | ✅ Required | None |

@@ -1,4 +1,4 @@
-# Literature Overview: Mechanical Models for Engineering Fidelity
+# Literature Overview: Mechanical Models for Mechanical Fidelity
 
 **Purpose:** Template models from literature to adapt for infant manikin fidelity assessment
 **Created:** 2026-01-18

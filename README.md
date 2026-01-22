@@ -1,4 +1,4 @@
-# Engineering Fidelity of CPR Training Manikins
+# Mechanical Fidelity of CPR Training Manikins
 
 A research paper for **Measurement Science and Technology** (IOP Publishing) - Focus Collection on *"Data-Centric Exploration and Explanation of Physical and Engineering Phenomena"*
 
@@ -21,21 +21,21 @@ Human Reference Model    →    Manikin Characterization    →    Fidelity Gap 
 
 1. Build a human reference model from medical/clinical literature
 2. Systematically test multiple CPR manikins against this reference
-3. Quantify the "engineering fidelity gap" for each manikin
+3. Quantify the "mechanical fidelity gap" for each manikin
 
 ## Key Contributions
 
 - First systematic benchmark combining compression AND ventilation fidelity
 - Data-driven reference model synthesized from published clinical datasets
-- Quantified engineering fidelity index for manikin procurement decisions
+- Quantified mechanical fidelity index for manikin procurement decisions
 - Novel ventilation fidelity analysis (largely unstudied area)
 
-## Engineering Fidelity Index (EFI)
+## Mechanical Fidelity Index (MFI)
 
-The EFI is a quantified metric to score how well a manikin replicates human biomechanics:
+The MFI is a quantified metric to score how well a manikin replicates human biomechanics:
 
 ```
-EFI = w_c * F_compression + w_v * F_ventilation
+MFI = w_c * F_compression + w_v * F_ventilation
 ```
 
 | Component | Description |
@@ -45,19 +45,19 @@ EFI = w_c * F_compression + w_v * F_ventilation
 | w_c, w_v | Weighting factors (adjustable based on training priorities) |
 
 **Scoring:**
-- **EFI = 1.0** - Perfect match to human reference center
-- **EFI = 0.0** - Deviation equals full envelope width
+- **MFI = 1.0** - Perfect match to human reference center
+- **MFI = 0.0** - Deviation equals full envelope width
 
-Higher EFI = more physiologically realistic manikin. This provides training centers a single number to compare manikins for procurement decisions.
+Higher MFI = more physiologically realistic manikin. This provides training centers a single number to compare manikins for procurement decisions.
 
 ## Paper Structure
 
-1. **Introduction** - Engineering fidelity concept and research gap
+1. **Introduction** - Mechanical fidelity concept and research gap
 2. **Human Reference Model** - Compression and ventilation mechanics from literature
 3. **Uncertainty Envelope** - Acceptable range from human variability
 4. **Manikin Characterization Protocol** - Standardized testing methodology
 5. **Results** - Fidelity comparison across multiple manikins
-6. **Engineering Fidelity Index** - Quantified metric proposal
+6. **Mechanical Fidelity Index** - Quantified metric proposal
 7. **Discussion & Conclusion**
 
 ## Related Work
@@ -69,7 +69,7 @@ Higher EFI = more physiologically realistic manikin. This provides training cent
 | [Perspective paper](https://github.com/jakorten/Proposition.git) | Resuscitation | Conceptual framework |
 | **This paper** | MST | Technical methodology + data |
 
-The perspective paper argues *for* engineering fidelity; this paper provides the *tools to measure* it.
+The perspective paper argues *for* mechanical fidelity; this paper provides the *tools to measure* it.
 
 ## Current Status
 
@@ -80,7 +80,7 @@ The perspective paper argues *for* engineering fidelity; this paper provides the
 | 3. Uncertainty Envelope | Draft complete |
 | 4. Manikin Characterization Protocol | Draft complete |
 | 5. Results | Awaiting data collection |
-| 6. Engineering Fidelity Index | Draft complete |
+| 6. Mechanical Fidelity Index | Draft complete |
 | 7. Discussion | Draft complete |
 | 8. Conclusion | Draft complete |
 

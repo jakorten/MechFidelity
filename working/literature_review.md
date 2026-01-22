@@ -1,4 +1,4 @@
-# Literature Review: Engineering Fidelity of CPR Training Manikins
+# Literature Review: Mechanical Fidelity of CPR Training Manikins
 
 **Purpose:** Systematic review of biomechanical reference data for constructing human reference models for chest compression and ventilation mechanics.
 
@@ -8,7 +8,7 @@
 
 ## 1. Executive Summary
 
-This review synthesizes the available literature on human thorax biomechanics relevant to CPR manikin engineering fidelity. Key findings:
+This review synthesizes the available literature on human thorax biomechanics relevant to CPR manikin mechanical fidelity. Key findings:
 
 1. **Chest Compression Mechanics:** Robust human reference data exists for adults (n=615 patients, Ruiz de Gauna 2023), including stiffness, damping, and their evolution during CPR
 2. **Ventilation Mechanics:** Reference data exists for infant respiratory compliance and resistance (n=205 infants, Huang 2016)
@@ -272,7 +272,7 @@ The Ruiz de Gauna (2023) viscoelastic model achieved:
 
 1. **First ventilation fidelity benchmark:** Characterize manikin C and R against Huang/Battisti reference data
 2. **Combined compression + ventilation:** Novel integrated analysis
-3. **Engineering Fidelity Index:** Quantified, actionable metric
+3. **Mechanical Fidelity Index:** Quantified, actionable metric
 4. **Multi-manikin comparison:** Systematic cross-manufacturer benchmark
 
 ---
@@ -329,4 +329,4 @@ The Ruiz de Gauna (2023) viscoelastic model achieved:
 ---
 
 *Document created: January 2026*
-*For: MST Special Issue Paper on Engineering Fidelity*
+*For: MST Special Issue Paper on Mechanical Fidelity*

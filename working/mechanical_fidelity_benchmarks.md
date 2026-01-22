@@ -2,7 +2,7 @@
 
 **Date:** 2025-12-20
 **Purpose:** Summarize available biomechanical data for CPR manikin mechanical fidelity requirements
-**Context:** Supporting evidence for proposition paper on engineering fidelity
+**Context:** Supporting evidence for proposition paper on mechanical fidelity
 
 ---
 

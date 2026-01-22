@@ -1,6 +1,6 @@
 # Claim Coverage Report
 
-**Paper:** Engineering Fidelity of CPR Training Manikins
+**Paper:** Mechanical Fidelity of CPR Training Manikins
 **Last Generated:** 2026-01-15
 
 ---

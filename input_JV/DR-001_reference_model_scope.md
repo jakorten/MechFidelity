@@ -53,18 +53,18 @@ The paper needs to define what human reference data to include and what manikins
 | Resistance (R) measurement (ventilation) | — |
 | Force-displacement curves (compression) | — |
 | Human reference envelope (Huang 2016, ventilation) | — |
-| Engineering fidelity index (ventilation only) | — |
+| Mechanical fidelity index (ventilation only) | — |
 | Compression data (descriptive, no fidelity index) | — |
 
 ### Paper Positioning
 
 **Title revision suggestion:**
-"Engineering Fidelity of Infant CPR Manikins: A Data-Driven Reference Model for Respiratory and Compression Mechanics"
+"Mechanical Fidelity of Infant CPR Manikins: A Data-Driven Reference Model for Respiratory and Compression Mechanics"
 
 **Key claims:**
 - First systematic benchmark of infant manikin respiratory mechanics
 - Quantitative comparison against human infant reference data (ventilation)
-- Engineering fidelity index for ventilation compliance and resistance
+- Mechanical fidelity index for ventilation compliance and resistance
 - First characterization of infant manikin compression mechanics (descriptive)
 
 ## Implications
@@ -85,7 +85,35 @@ The paper needs to define what human reference data to include and what manikins
 - Focus on ventilation claims (V1-V2, RV1-RV3) for fidelity evaluation
 - Update novelty claims (I2, I3, D1, D2) for combined scope
 
+## Update 2026-01-21: Compression Reference Status
+
+### O'Reilly/Schmölzer 2024 (Pediatric Research)
+- **No force data available** — only depth measured (infrared sensor)
+- No chest stiffness/compliance measurements
+- Supports hypothesis that force profile matters (not just depth)
+- Cannot derive infant chest stiffness from this source
+
+### Thielen et al. 2017 (TU/e, Proc IMechE Part H)
+- **Provides force-displacement methodology** — polynomial model
+- Key finding: Classical manikins are LINEAR, human chest is NONLINEAR
+- Model: `F = k₁·z + k₂·z² + k₃·z³ + k₄·z⁴ + d₀·ż + d₁·z·ż`
+- **Limitation:** ADULT chest mechanics, not infant
+- Explicitly calls out SimMan 3G and Apollo as not meeting fidelity requirements
+
+### Conclusion
+1. **Compression remains descriptive** — no infant reference data available
+2. **Thielen methodology applicable** — use polynomial model for manikin characterization
+3. **Discussion point:** Future work needs device to measure infant chest mechanics at different gestational ages (ethically challenging but technically feasible with non-invasive methods)
+
+### Action Items
+- [ ] Check with Mark Thielen about extending methodology to infant scale
+- [ ] Consider polynomial model (Gruben) for compression characterization
+- [ ] Add discussion section on "measurement gap" for infant chest mechanics
+
+---
+
 ## Revisit If
 
 - Adult manikins become available
 - Human infant compression data published (enables compression fidelity index)
+- Collaboration with Thielen/TU/e on infant-scale measurements

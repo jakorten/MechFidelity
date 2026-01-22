@@ -1,6 +1,6 @@
 # Claim Registry
 
-**Paper:** Engineering Fidelity of Infant CPR Manikins (MST Special Issue)
+**Paper:** Mechanical Fidelity of Infant CPR Manikins (MST Special Issue)
 **Last Updated:** 2026-01-21 (Infant stiffness gap confirmed; Kent/Nysæther sources added)
 **Thesis:** Data-driven reference model enables objective evaluation of infant manikin fidelity
 
@@ -29,7 +29,7 @@
 
 | ID | Claim | Priority | Source | Status |
 |----|-------|----------|--------|--------|
-| I1 | Engineering fidelity concept links to perspective paper | P1 | Proposition paper | [ ] |
+| I1 | Mechanical fidelity concept links to perspective paper | P1 | Proposition paper | [ ] |
 | I2 | No systematic benchmark exists for infant manikin ventilation | P0 | Literature gap | [x] VERIFIED: Reiss 2015 calls for manikin C/R characterization but none exists; Thielen 2017: "even SimMan 3G and Apollo do not fulfil all requirements" |
 | I3 | First data-driven reference model for infant manikin ventilation | P0 | Novelty claim | [x] VERIFIED: No infant manikin ventilation benchmark found in literature |
 | I4 | Force application profile affects outcomes independently of depth | P1 | O'Reilly 2024 | [x] VERIFIED: Piglet model (n=12): machine CC at 32% depth > human CC at 38% depth for stroke volume and LV contractility |
@@ -48,7 +48,7 @@
 | ID | Claim | Priority | Source | Status |
 |----|-------|----------|--------|--------|
 | U1 | Human data shows natural variability requiring range-based model | P1 | Inference | [ ] |
-| U2 | Manikins within envelope = adequate engineering fidelity | P1 | Definition | [ ] |
+| U2 | Manikins within envelope = adequate mechanical fidelity | P1 | Definition | [ ] |
 
 ### Section 4: Manikin Characterization Protocol
 
@@ -85,7 +85,7 @@
 | C7 | Infant compression depth varies with age (2.7 cm at 0-2 mo) | P1 | Ikeyama 2024 (n=555) | [x] VERIFIED: 0-2mo: 2.7cm, 49% over-compressed at 4cm target |
 | C8 | Scaling adult chest data to pediatric does not work | P1 | Kent 2010 | [x] VERIFIED: "Scaling...did not successfully predict the pediatric behavior" |
 
-### Section 6: Engineering Fidelity Index
+### Section 6: Mechanical Fidelity Index
 
 | ID | Claim | Priority | Source | Status |
 |----|-------|----------|--------|--------|

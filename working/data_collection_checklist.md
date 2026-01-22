@@ -1,6 +1,6 @@
 # Data Collection Checklist
 
-**Paper:** Engineering Fidelity of CPR Training Manikins
+**Paper:** Mechanical Fidelity of CPR Training Manikins
 **Deadline:** March 31, 2026
 **Target:** Complete data collection by mid-February 2026
 
@@ -176,8 +176,8 @@ Per manikin:
 ### 5.2 Cross-Manikin Analysis
 - [ ] Generate comparison table (all manikins vs. reference)
 - [ ] Plot force-displacement overlays
-- [ ] Calculate Engineering Fidelity Index (EFI) for each
-- [ ] Rank manikins by EFI
+- [ ] Calculate Mechanical Fidelity Index (MFI) for each
+- [ ] Rank manikins by MFI
 - [ ] Assess unit-to-unit variation (same model)
 
 ### 5.3 Figures for Paper
@@ -189,7 +189,7 @@ Per manikin:
 | Fig. 3 | Force-displacement curves (all manikins vs. human) | [ ] |
 | Fig. 4 | Hysteresis loop comparison | [ ] |
 | Fig. 5 | Ventilation compliance/resistance vs. reference | [ ] |
-| Fig. 6 | EFI ranking bar chart | [ ] |
+| Fig. 6 | MFI ranking bar chart | [ ] |
 
 ### 5.4 Tables for Paper
 
@@ -199,7 +199,7 @@ Per manikin:
 | Table 2 | Human reference values (ventilation) | [x] In draft |
 | Table 3 | Manikin compression parameters | [ ] |
 | Table 4 | Manikin ventilation parameters | [ ] |
-| Table 5 | EFI scores and ranking | [ ] |
+| Table 5 | MFI scores and ranking | [ ] |
 | Table 6 | Unit-to-unit variation | [ ] |
 
 ---
@@ -212,7 +212,7 @@ Per manikin:
 | 2 | Jan 20–26 | Compression testing (3–4 manikins) |
 | 3 | Jan 27–Feb 2 | Compression testing (remaining) + analysis |
 | 4 | Feb 3–9 | Ventilation testing (all manikins) |
-| 5 | Feb 10–16 | Analysis, EFI calculation, figures |
+| 5 | Feb 10–16 | Analysis, MFI calculation, figures |
 | 6 | Feb 17–23 | Write Section 5, revise draft |
 | 7 | Feb 24–Mar 2 | Co-author review |
 | 8 | Mar 3–9 | Revisions |

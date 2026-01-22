@@ -1,4 +1,4 @@
-# Engineering Fidelity of CPR Training Manikins: A Data-Driven Reference Model for Chest Compression and Ventilation Mechanics
+# Mechanical Fidelity of CPR Training Manikins: A Data-Driven Reference Model for Chest Compression and Ventilation Mechanics
 
 **Target:** Measurement Science and Technology - Special Issue on "Data-Centric Exploration and Explanation of Physical and Engineering Phenomena"
 
@@ -10,9 +10,9 @@
 
 ## Abstract
 
-Cardiopulmonary resuscitation (CPR) training manikins are assumed to provide realistic haptic feedback, yet their mechanical properties are rarely validated against human biomechanical reference data. This paper presents a data-driven reference model for CPR manikin characterization, synthesizing published clinical datasets on chest compression mechanics (n=615 adult patients) and infant ventilation mechanics (n=205 healthy infants). We propose a standardized characterization protocol for quantifying manikin stiffness, damping, compliance, and resistance, and introduce an Engineering Fidelity Index (EFI) that enables objective comparison between manikins and human reference envelopes. Application of this framework to multiple commercial manikins reveals [results to be added]. This work provides the measurement science foundation for evidence-based manikin selection and design.
+Cardiopulmonary resuscitation (CPR) training manikins are assumed to provide realistic haptic feedback, yet their mechanical properties are rarely validated against human biomechanical reference data. This paper presents a data-driven reference model for CPR manikin characterization, synthesizing published clinical datasets on chest compression mechanics (n=615 adult patients) and infant ventilation mechanics (n=205 healthy infants). We propose a standardized characterization protocol for quantifying manikin stiffness, damping, compliance, and resistance, and introduce an Mechanical Fidelity Index (MFI) that enables objective comparison between manikins and human reference envelopes. Application of this framework to multiple commercial manikins reveals [results to be added]. This work provides the measurement science foundation for evidence-based manikin selection and design.
 
-**Keywords:** cardiopulmonary resuscitation, medical simulation, biomechanical characterization, measurement uncertainty, engineering fidelity
+**Keywords:** cardiopulmonary resuscitation, medical simulation, biomechanical characterization, measurement uncertainty, mechanical fidelity
 
 ---
 
@@ -20,11 +20,11 @@ Cardiopulmonary resuscitation (CPR) training manikins are assumed to provide rea
 
 ### 1.1 Background and Motivation
 
-Cardiopulmonary resuscitation (CPR) training relies on surrogate patients—manikins—to develop the psychomotor skills required for effective chest compressions and ventilations. The fidelity of these training devices, that is, their similarity to real human patients, is assumed to influence skill transfer to clinical practice [1,2]. Yet while considerable research has addressed *psychological fidelity* (stress induction, scenario realism) and *visual fidelity* (anatomical appearance), the *engineering fidelity*—the measurable mechanical behavior of the manikin relative to human biomechanics—remains largely uncharacterized.
+Cardiopulmonary resuscitation (CPR) training relies on surrogate patients—manikins—to develop the psychomotor skills required for effective chest compressions and ventilations. The fidelity of these training devices, that is, their similarity to real human patients, is assumed to influence skill transfer to clinical practice [1,2]. Yet while considerable research has addressed *psychological fidelity* (stress induction, scenario realism) and *visual fidelity* (anatomical appearance), the *mechanical fidelity*—the measurable mechanical behavior of the manikin relative to human biomechanics—remains largely uncharacterized.
 
 Current CPR manikins employ simplified mechanical systems, typically a single spring-damper configuration, that produce a linear or weakly nonlinear force-displacement response [3]. Human thorax behavior, in contrast, exhibits pronounced nonlinearity, hysteresis, and time-dependent softening during sustained compressions [4,5]. This mismatch raises a fundamental question: **How closely do training manikins approximate the mechanical response of the human body they purport to simulate?**
 
-### 1.2 The Engineering Fidelity Gap
+### 1.2 The Mechanical Fidelity Gap
 
 Previous work has approached manikin characterization from two directions:
 
@@ -37,7 +37,7 @@ Previous work has approached manikin characterization from two directions:
 **The critical gap** is the absence of:
 1. A systematically derived human reference model against which manikins can be evaluated
 2. A standardized protocol for manikin mechanical characterization
-3. A quantitative metric for engineering fidelity that enables objective comparison
+3. A quantitative metric for mechanical fidelity that enables objective comparison
 
 ### 1.3 Contribution
 
@@ -49,13 +49,13 @@ This paper addresses these gaps through a data-centric approach:
 
 2. **Characterization Protocol:** We propose a standardized measurement methodology for quantifying manikin mechanical properties with explicit uncertainty budgets.
 
-3. **Engineering Fidelity Index (EFI):** We introduce a composite metric that quantifies the deviation between a manikin's measured response and the human reference envelope, enabling objective ranking for procurement and design decisions.
+3. **Mechanical Fidelity Index (MFI):** We introduce a composite metric that quantifies the deviation between a manikin's measured response and the human reference envelope, enabling objective ranking for procurement and design decisions.
 
 4. **Empirical Benchmark:** We apply this framework to characterize multiple commercial manikins, providing the first systematic compression-and-ventilation fidelity comparison.
 
 ### 1.4 Paper Organization
 
-Section 2 presents the construction of human reference models from published literature. Section 3 defines the uncertainty envelope accounting for natural human variability. Section 4 describes the manikin characterization protocol. Section 5 presents empirical results. Section 6 introduces the Engineering Fidelity Index. Section 7 discusses implications and limitations, and Section 8 concludes.
+Section 2 presents the construction of human reference models from published literature. Section 3 defines the uncertainty envelope accounting for natural human variability. Section 4 describes the manikin characterization protocol. Section 5 presents empirical results. Section 6 introduces the Mechanical Fidelity Index. Section 7 discusses implications and limitations, and Section 8 concludes.
 
 ---
 
@@ -228,7 +228,7 @@ Existing infant manikin designs (e.g., Thielen et al. [3]) are based on anatomic
 
 ### 3.1 Rationale
 
-Human biomechanics exhibit natural variability due to differences in age, sex, body composition, and pathophysiology. A realistic reference model should define an **acceptable range** (envelope) rather than a single target value. Manikins falling within this envelope demonstrate adequate engineering fidelity; those outside can be quantified by their deviation.
+Human biomechanics exhibit natural variability due to differences in age, sex, body composition, and pathophysiology. A realistic reference model should define an **acceptable range** (envelope) rather than a single target value. Manikins falling within this envelope demonstrate adequate mechanical fidelity; those outside can be quantified by their deviation.
 
 ### 3.2 Envelope Construction Method
 
@@ -431,11 +431,11 @@ Data will be made available as supplementary material to enable independent veri
 
 ---
 
-## 6. Engineering Fidelity Index
+## 6. Mechanical Fidelity Index
 
 ### 6.1 Concept
 
-The Engineering Fidelity Index (EFI) quantifies how closely a manikin's mechanical response approximates the human reference envelope. A manikin perfectly matching the envelope center scores EFI = 1.0; deviations reduce the score proportionally.
+The Mechanical Fidelity Index (MFI) quantifies how closely a manikin's mechanical response approximates the human reference envelope. A manikin perfectly matching the envelope center scores MFI = 1.0; deviations reduce the score proportionally.
 
 ### 6.2 Component Scores
 
@@ -449,9 +449,9 @@ where $m_i$ is the manikin's measured value for parameter $i$, $\mu_i$ is the hu
 
 Analogously defined for compliance and resistance parameters.
 
-### 6.3 Combined Engineering Fidelity Index
+### 6.3 Combined Mechanical Fidelity Index
 
-$$EFI = w_c \cdot CFS + w_v \cdot VFS$$
+$$MFI = w_c \cdot CFS + w_v \cdot VFS$$
 
 where $w_c$ and $w_v$ are weighting factors reflecting the relative importance of compression and ventilation fidelity for the intended training application.
 
@@ -461,17 +461,17 @@ where $w_c$ and $w_v$ are weighting factors reflecting the relative importance o
 
 ### 7.1 Principal Findings
 
-This work presents the first systematic framework for quantifying the engineering fidelity of CPR training manikins against human biomechanical reference data. Three principal findings emerge:
+This work presents the first systematic framework for quantifying the mechanical fidelity of CPR training manikins against human biomechanical reference data. Three principal findings emerge:
 
 **First, comprehensive human reference data exists but has not been applied to manikin validation.** The Ruiz de Gauna dataset (n=615 OHCA patients, 1.15M compressions) provides statistically robust chest compression mechanics parameters [5], while the Huang dataset (n=205 infants) provides infant ventilation mechanics [11]. These datasets enable construction of evidence-based reference envelopes rather than relying on expert opinion or anatomical assumptions.
 
-**Second, anatomical fidelity does not guarantee functional fidelity.** The Thielen et al. [3] design achieved correct *shape* of nonlinear force-displacement behavior through anatomical mimicry, but incorrect *magnitude*—their manikin was "considerably lower" in stiffness than human reference values. This exemplifies the form-function distinction: high anatomical fidelity (form) is neither necessary nor sufficient for high engineering fidelity (function).
+**Second, anatomical fidelity does not guarantee functional fidelity.** The Thielen et al. [3] design achieved correct *shape* of nonlinear force-displacement behavior through anatomical mimicry, but incorrect *magnitude*—their manikin was "considerably lower" in stiffness than human reference values. This exemplifies the form-function distinction: high anatomical fidelity (form) is neither necessary nor sufficient for high mechanical fidelity (function).
 
 **Third, system-level validation is essential.** Our prior work demonstrated 5.6% calibration shifts between isolated and integrated sensor configurations [6], with 120–130× deviations from component datasheet predictions. This confirms that manikin mechanical properties must be characterized *in phantoma*, not inferred from component specifications.
 
 ### 7.2 Implications for Manikin Design
 
-The engineering fidelity framework has direct implications for manikin design philosophy:
+The mechanical fidelity framework has direct implications for manikin design philosophy:
 
 **Target functional equivalence, not structural mimicry.** A simplified mechanism (e.g., tuned spring-damper system) that produces correct force-displacement behavior is functionally equivalent to anatomical complexity for skill transfer purposes. The trainee's muscles respond to mechanical feedback, not internal anatomy.
 
@@ -491,15 +491,15 @@ If manikins deviate substantially from human mechanical properties, what are the
 
 **Ventilation technique:** Airway resistance and compliance affect the "feel" of bag-mask ventilation. Manikins with unrealistic ventilation mechanics may poorly prepare trainees for real infant airways.
 
-The Engineering Fidelity Index provides a quantitative basis for evaluating whether specific fidelity gaps are likely to affect skill transfer—enabling evidence-based rather than assumption-based training device selection.
+The Mechanical Fidelity Index provides a quantitative basis for evaluating whether specific fidelity gaps are likely to affect skill transfer—enabling evidence-based rather than assumption-based training device selection.
 
 ### 7.4 Relationship to Simulation Fidelity Literature
 
 This work operationalizes concepts from the simulation fidelity literature:
 
-**Norman et al. [2]** found "minimal relationship between simulation fidelity and transfer of learning," but their analysis focused on *physical* (visual) fidelity, not *functional* (mechanical) fidelity. Engineering fidelity is a distinct construct.
+**Norman et al. [2]** found "minimal relationship between simulation fidelity and transfer of learning," but their analysis focused on *physical* (visual) fidelity, not *functional* (mechanical) fidelity. Mechanical fidelity is a distinct construct.
 
-**Hamstra et al. [1]** called for "reconsidering fidelity" with emphasis on functional task alignment. The EFI framework directly addresses this call by quantifying the functional parameters relevant to CPR skill acquisition.
+**Hamstra et al. [1]** called for "reconsidering fidelity" with emphasis on functional task alignment. The MFI framework directly addresses this call by quantifying the functional parameters relevant to CPR skill acquisition.
 
 **Psychological fidelity** (stress, realism) remains outside the scope of this mechanical characterization but represents an important complementary dimension for comprehensive manikin evaluation.
 
@@ -517,7 +517,7 @@ Several limitations constrain the current work:
 
 ### 7.6 Future Directions
 
-Several extensions would strengthen the engineering fidelity framework:
+Several extensions would strengthen the mechanical fidelity framework:
 
 1. **Pediatric biomechanical studies:** Clinical characterization of infant/child chest mechanics to establish age-appropriate reference envelopes
 
@@ -525,17 +525,17 @@ Several extensions would strengthen the engineering fidelity framework:
 
 3. **Multi-center validation:** Inter-laboratory comparison to establish protocol reproducibility
 
-4. **Training outcome correlation:** Prospective studies linking EFI scores to clinical skill transfer
+4. **Training outcome correlation:** Prospective studies linking MFI scores to clinical skill transfer
 
-5. **Manufacturer engagement:** Collaboration with manikin manufacturers to integrate engineering fidelity into design specifications
+5. **Manufacturer engagement:** Collaboration with manikin manufacturers to integrate mechanical fidelity into design specifications
 
 ---
 
 ## 8. Conclusion
 
-This paper presents a data-driven framework for quantifying the engineering fidelity of CPR training manikins. By synthesizing published clinical datasets, we construct human reference envelopes for chest compression mechanics (adults) and ventilation mechanics (infants). A standardized characterization protocol with SI-traceable measurements and GUM-compliant uncertainty quantification enables objective comparison between manikins and human reference data.
+This paper presents a data-driven framework for quantifying the mechanical fidelity of CPR training manikins. By synthesizing published clinical datasets, we construct human reference envelopes for chest compression mechanics (adults) and ventilation mechanics (infants). A standardized characterization protocol with SI-traceable measurements and GUM-compliant uncertainty quantification enables objective comparison between manikins and human reference data.
 
-The Engineering Fidelity Index (EFI) transforms qualitative assessments ("high fidelity," "realistic feel") into quantitative metrics actionable for procurement decisions, regulatory standards, and design optimization. Rather than assuming that expensive, visually realistic manikins provide superior training, the EFI enables evidence-based evaluation of the mechanical properties that actually matter for skill transfer.
+The Mechanical Fidelity Index (MFI) transforms qualitative assessments ("high fidelity," "realistic feel") into quantitative metrics actionable for procurement decisions, regulatory standards, and design optimization. Rather than assuming that expensive, visually realistic manikins provide superior training, the MFI enables evidence-based evaluation of the mechanical properties that actually matter for skill transfer.
 
 Key findings include:
 
@@ -547,7 +547,7 @@ Key findings include:
 
 4. **Critical gap identified:** Infant chest compression biomechanics remain uncharacterized, limiting validation of infant manikins against human ground truth
 
-The engineering fidelity framework provides the measurement science foundation for a paradigm shift: from assumption-based to evidence-based CPR training device evaluation. We call for manufacturer transparency regarding mechanical specifications, regulatory standards incorporating engineering fidelity requirements, and continued clinical research to fill the identified evidence gaps.
+The mechanical fidelity framework provides the measurement science foundation for a paradigm shift: from assumption-based to evidence-based CPR training device evaluation. We call for manufacturer transparency regarding mechanical specifications, regulatory standards incorporating mechanical fidelity requirements, and continued clinical research to fill the identified evidence gaps.
 
 ---
 

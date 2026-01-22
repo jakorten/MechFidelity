@@ -1,6 +1,6 @@
 # Project Backlog
 
-**Paper:** Engineering Fidelity of CPR Training Manikins
+**Paper:** Mechanical Fidelity of CPR Training Manikins
 **Target:** MST Special Issue - March 31, 2026
 
 ---
@@ -42,7 +42,7 @@
 ### Analysis (pending)
 - [ ] Reference model fitting (uncertainty envelope)
 - [ ] Manikin comparison analysis
-- [ ] Engineering fidelity index calculation
+- [ ] Mechanical fidelity index calculation
 
 ### Writing (pending)
 - [ ] Draft Section 1: Introduction
@@ -101,7 +101,7 @@ See: `DR-001_reference_model_scope.md`
 - **A:** Mechanical Fidelity Assessment
 - **B:** Quantitative Fidelity Framework
 
-**Context:** "Engineering fidelity" is confusing—conflates with visual "high fidelity." Need terminology that emphasizes mechanical response vs appearance.
+**Context:** "Mechanical fidelity" is confusing—conflates with visual "high fidelity." Need terminology that emphasizes mechanical response vs appearance.
 
 See: `working/DR-004_framework_terminology.md`
 

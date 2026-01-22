@@ -79,7 +79,7 @@ Babic explicitly acknowledges the absence of infant biomechanical reference data
 
 ### Your paper's contribution:
 - Babic provides test *methodology* but lacks human infant reference envelope
-- Your EFI framework provides what's missing: systematic comparison against reference model
+- Your MFI framework provides what's missing: systematic comparison against reference model
 - Even Babic's scaled curves are approximations — your ventilation data (Huang 2016) provides actual infant reference
 
 ---

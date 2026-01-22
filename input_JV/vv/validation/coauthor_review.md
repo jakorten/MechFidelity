@@ -1,6 +1,6 @@
 # Co-Author Review Tracker
 
-**Paper:** Engineering Fidelity of CPR Training Manikins
+**Paper:** Mechanical Fidelity of CPR Training Manikins
 **Target:** MST Special Issue
 
 ---

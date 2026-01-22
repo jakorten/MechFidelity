@@ -1,11 +1,11 @@
 #!/usr/bin/env python3
 """
-Ventilation Mechanics Analysis for Engineering Fidelity Paper
+Ventilation Mechanics Analysis for Mechanical Fidelity Paper
 
 Calculates respiratory compliance and resistance from pressure/flow data
 collected by the existing TIM ventilation apparatus.
 
-Author: Generated for Engineering Fidelity Paper
+Author: Generated for Mechanical Fidelity Paper
 Date: January 2026
 """
 
@@ -282,7 +282,7 @@ def calculate_ventilation_fidelity_score(
     reference: Dict = HUANG_REFERENCE
 ) -> float:
     """
-    Calculate Ventilation Fidelity Score (VFS) for Engineering Fidelity Index.
+    Calculate Ventilation Fidelity Score (VFS) for Mechanical Fidelity Index.
 
     VFS = 1 - mean(|deviation from reference|)
 

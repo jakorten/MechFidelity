@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-Preliminary plots for Engineering Fidelity paper - Version 3
+Preliminary plots for Mechanical Fidelity paper - Version 3
 Includes hypothetical LAMB reference for compression (3.5 kg, comparable to newborn infant)
 """
 
@@ -130,7 +130,7 @@ ax2.annotate('⚠ Lamb data TBD\n(values hypothetical)',
              xy=(22, 5), fontsize=8, style='italic', color='purple',
              bbox=dict(boxstyle='round', facecolor='lavender', alpha=0.9))
 
-plt.suptitle('Engineering Fidelity of Infant CPR Manikins\nVentilation (Human ref.) + Compression (Lamb ref.)',
+plt.suptitle('Mechanical Fidelity of Infant CPR Manikins\nVentilation (Human ref.) + Compression (Lamb ref.)',
              fontsize=14, fontweight='bold')
 plt.tight_layout(rect=[0, 0, 1, 0.93])
 plt.savefig('/Users/jakorten/research/Paper3 - MechanicalFidelity/working/plot_v3_with_lamb_reference.png')
@@ -200,7 +200,7 @@ ax2.set_ylim(0, 50)
 ax2.legend(loc='upper left', fontsize=9)
 ax2.grid(True, alpha=0.3)
 
-plt.suptitle('Engineering Fidelity Assessment\nWhich Manikins Fall Within Reference Envelope?',
+plt.suptitle('Mechanical Fidelity Assessment\nWhich Manikins Fall Within Reference Envelope?',
              fontsize=14, fontweight='bold')
 plt.tight_layout(rect=[0, 0, 1, 0.93])
 plt.savefig('/Users/jakorten/research/Paper3 - MechanicalFidelity/working/plot_v3_fidelity_assessment.png')

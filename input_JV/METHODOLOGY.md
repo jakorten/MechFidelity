@@ -1,6 +1,6 @@
 # Methodology: AI-Augmented Technical Paper Development
 
-**Purpose:** Replicable methodology for developing the MST engineering fidelity paper with AI assistance.
+**Purpose:** Replicable methodology for developing the MST mechanical fidelity paper with AI assistance.
 
 **Adapted from:** `C:\local_dev\Proposition\input_JV\METHODOLOGY.md`
 

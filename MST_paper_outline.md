@@ -18,7 +18,7 @@
 
 ## Core Concept
 
-Build a **human reference model** from medical/clinical literature, then systematically compare multiple CPR training manikins against that model to quantify the "engineering fidelity gap."
+Build a **human reference model** from medical/clinical literature, then systematically compare multiple CPR training manikins against that model to quantify the "mechanical fidelity gap."
 
 ```
 Human Reference Model          →    Manikin Characterization    →    Fidelity Gap Analysis
@@ -179,7 +179,7 @@ Propose a quantified metric for manikin selection:
 | Perspective paper | Resuscitation | In preparation | Conceptual framework |
 | **This paper** | MST | Planned | Technical methodology + data |
 
-**Synergy:** The perspective paper argues FOR engineering fidelity; this MST paper provides the TOOLS to measure it.
+**Synergy:** The perspective paper argues FOR mechanical fidelity; this MST paper provides the TOOLS to measure it.
 
 ---
 
