@@ -158,7 +158,7 @@ Before accepting any literature claim:
 ## 6. Document Structure
 
 ```
-EngineeringFidelity/
+MechanicalFidelity/
 |-- CLAUDE.md                    <- Session continuity (READ FIRST)
 |-- MST_paper_outline.md         <- Paper structure
 |-- input_JV/                    <- Working documents

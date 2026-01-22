@@ -62,7 +62,7 @@ Human Reference Model          ->    Manikin Characterization    ->    Fidelity 
 ## Directory Structure
 
 ```
-EngineeringFidelity/
+MechanicalFidelity/
 |-- CLAUDE.md                    <- This file (read first)
 |-- MST_paper_outline.md         <- Paper structure
 |-- MST_paper_supervisor_summary.md

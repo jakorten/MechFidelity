@@ -133,7 +133,7 @@ ax2.annotate('⚠ Lamb data TBD\n(values hypothetical)',
 plt.suptitle('Engineering Fidelity of Infant CPR Manikins\nVentilation (Human ref.) + Compression (Lamb ref.)',
              fontsize=14, fontweight='bold')
 plt.tight_layout(rect=[0, 0, 1, 0.93])
-plt.savefig('/Users/jakorten/research/Paper3 - EngineeringFidelity/working/plot_v3_with_lamb_reference.png')
+plt.savefig('/Users/jakorten/research/Paper3 - MechanicalFidelity/working/plot_v3_with_lamb_reference.png')
 print("Saved: plot_v3_with_lamb_reference.png")
 
 # =============================================================================
@@ -203,7 +203,7 @@ ax2.grid(True, alpha=0.3)
 plt.suptitle('Engineering Fidelity Assessment\nWhich Manikins Fall Within Reference Envelope?',
              fontsize=14, fontweight='bold')
 plt.tight_layout(rect=[0, 0, 1, 0.93])
-plt.savefig('/Users/jakorten/research/Paper3 - EngineeringFidelity/working/plot_v3_fidelity_assessment.png')
+plt.savefig('/Users/jakorten/research/Paper3 - MechanicalFidelity/working/plot_v3_fidelity_assessment.png')
 print("Saved: plot_v3_fidelity_assessment.png")
 
 # =============================================================================

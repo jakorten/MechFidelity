@@ -7,7 +7,7 @@ date: 2026-01-15
 
 ## Context
 
-The EngineeringFidelity paper needs a rigorous development methodology to ensure:
+The MechanicalFidelity paper needs a rigorous development methodology to ensure:
 - All claims are verifiable and traced to sources or data
 - Progress is tracked systematically
 - Session continuity is maintained across AI-assisted work sessions
